@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Preethi Sharma &amp; Bittu Sharma — Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<style>
+:root{--iv:#FAF4E6;--pp:#F2E4C5;--g:#B8892F;--ch:#D8B96A;--mar:#68131E;--br:#392319;color-scheme:light;
+--tx:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .33 0 0 0 0 .15 0 0 0 .1 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+--dm:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26'%3E%3Cpath d='M13 2l11 11-11 11L2 13z' fill='none' stroke='%23D8B96A' stroke-opacity='.28'/%3E%3Ccircle cx='13' cy='13' r='1.6' fill='%23D8B96A' fill-opacity='.35'/%3E%3C/svg%3E")}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{background:var(--iv) var(--tx);color:var(--br);font:400 18px/1.6 'Cormorant Garamond',Georgia,serif;overflow-x:hidden}
+body:not(.opened){overflow:hidden;height:100%}
+.cz{font-family:Cinzel,serif;text-transform:uppercase;letter-spacing:.3em}.sc{font-family:'Great Vibes',cursive;font-weight:400}.dv{font-family:'Tiro Devanagari Hindi',serif}
+svg{display:block}.dvd{width:min(240px,64%);height:24px;margin:.9rem auto}
+main{opacity:0;transform:scale(1.07);transition:opacity 1.8s ease,transform 2.2s cubic-bezier(.2,.7,.2,1)}
+.opened main{opacity:1;transform:none}
+section{position:relative;max-width:640px;margin:auto;padding:4rem 1.25rem;text-align:center}
+h2{font:600 .9rem/1.4 Cinzel,serif;letter-spacing:.34em;text-transform:uppercase;color:var(--mar)}
+.sub{font-style:italic;color:var(--g);margin-top:.2rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 1.8rem;background:var(--mar);color:var(--ch);font:600 .72rem Cinzel,serif;letter-spacing:.28em;text-transform:uppercase;text-decoration:none;border:1px solid var(--g);box-shadow:inset 0 0 0 3px var(--mar),inset 0 0 0 4px var(--ch);cursor:pointer}
+:focus-visible{outline:2px solid var(--g);outline-offset:3px}
+.rv{opacity:0;transform:translateY(24px) scale(.985);transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}
+.vn{position:absolute;width:min(54vw,250px);aspect-ratio:1;pointer-events:none}
+.vn.tl{top:0;left:0}.vn.br{bottom:0;right:0;transform:rotate(180deg)}.vn.tr{top:0;right:0;transform:scaleX(-1)}.vn.bl{bottom:0;left:0;transform:scaleY(-1)}.vn.d{display:none}
+/* envelope */
+#envl{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 42%,#fffaf0,var(--pp) 75%,#e4cf9f) ,var(--tx);transition:opacity 1.3s ease .3s}
+#envl:after{content:"";position:absolute;inset:0;background:var(--tx);pointer-events:none}
+#envl.out{opacity:0;pointer-events:none}
+.env{position:relative;width:min(88vw,430px);height:min(70svh,600px);margin-top:-4svh;perspective:1400px;cursor:pointer;filter:drop-shadow(0 22px 26px rgba(57,35,25,.38));transition:opacity 1s ease .2s;z-index:2}
+.env>*{position:absolute;inset:0}
+.eb{background:var(--mar) var(--dm);border-radius:3px}
+.eb:before,.ef:before{content:"";position:absolute;inset:11px;border:1px solid var(--ch);box-shadow:inset 0 0 0 4px #68131E,inset 0 0 0 5px rgba(216,185,106,.55)}
+.card{inset:5% 7% 4%;background:#FFFAEC var(--tx);border:1px solid var(--g);box-shadow:inset 0 0 0 5px #FFFAEC,inset 0 0 0 6px var(--ch),0 -4px 14px rgba(0,0,0,.2);z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden;transition:transform 1.5s cubic-bezier(.3,.7,.2,1),opacity 1.2s ease}
+.card .vn{width:90px}.card b{font:400 2.1rem/1.1 'Great Vibes';color:var(--mar);display:block}.card small{font:400 .55rem Cinzel;letter-spacing:.3em;color:var(--g);text-transform:uppercase}
+.card svg.gm{width:46px;height:46px;margin:.3rem 0}
+.ef{z-index:2;clip-path:polygon(0 36%,50% 64%,100% 36%,100% 100%,0 100%);background:linear-gradient(180deg,#7d1a28,#5a0f19) ,var(--dm);background-blend-mode:normal}
+.ef svg.fd{position:absolute;inset:0;width:100%;height:100%}
+.ef .nm{position:absolute;left:0;right:0;bottom:11%;text-align:center;color:var(--ch)}
+.nm b{display:block;font:400 clamp(1.9rem,9vw,2.5rem)/1 'Great Vibes'}.nm i{font:400 .85rem Cinzel;letter-spacing:.3em;font-style:normal}
+.flap{z-index:3;transform-style:preserve-3d;transform-origin:50% 0;transition:transform 1.1s cubic-bezier(.5,0,.3,1)}
+.fa,.fb{position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 64%);backface-visibility:hidden}
+.fa{background:linear-gradient(185deg,#8a2030,#5c101b 80%) ,var(--dm);filter:brightness(1.02)}
+.fb{background:linear-gradient(#f4e6c4,#e3cd98);transform:rotateX(180deg)}
+.fa svg{position:absolute;inset:0;width:100%;height:100%}
+.fa .tp{position:absolute;top:9%;left:0;right:0;text-align:center;color:var(--ch);font-size:.9rem}
+.fa .tp svg{position:static;width:44px;height:44px;margin:.2rem auto 0;color:var(--ch)}
+.o1 .flap{transform:rotateX(180deg)}.o1b .flap{z-index:0}
+.seal{position:absolute;left:50%;top:64%;inset:auto;width:78px;height:78px;margin:-39px 0 0 -39px;z-index:5;border:0;border-radius:50% 47% 52% 49%/49% 52% 47% 50%;cursor:pointer;background:radial-gradient(circle at 32% 26%,#F6E3A3,#D8B96A 36%,#B8892F 72%,#7a5516);box-shadow:0 6px 10px rgba(0,0,0,.5),inset 0 2px 3px rgba(255,255,255,.6),inset 0 -4px 6px rgba(90,55,5,.55);font:400 1.55rem 'Great Vibes';color:var(--mar);text-shadow:0 1px 0 rgba(255,255,255,.5),0 -1px 1px rgba(60,30,0,.45);transition:transform .9s ease,opacity .8s ease}
+.seal:before{content:"";position:absolute;inset:7px;border-radius:50%;border:1.5px solid rgba(104,19,30,.55);box-shadow:inset 0 1px 2px rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.4)}
+.seal:after{content:"";position:absolute;inset:-34px;border-radius:50%;background:radial-gradient(rgba(255,206,110,.55),transparent 66%);z-index:-1;animation:fk 3s ease-in-out infinite}
+.gl .seal:after{animation:none;background:radial-gradient(rgba(255,214,120,.95),transparent 68%);inset:-48px}
+.rel .seal{transform:translateY(10px) scale(.7);opacity:0}
+@keyframes fk{0%,100%{opacity:.7;transform:scale(.95)}45%{opacity:1;transform:scale(1.06)}70%{opacity:.8}}
+.o2 .card{transform:translateY(-27%) scale(1.04)}
+.o3 .card{transform:translateY(-27%) scale(2.8);opacity:0}.o3 .env{opacity:0}
+.hint{position:absolute;bottom:max(5svh,22px);font:400 .72rem Cinzel;letter-spacing:.4em;text-transform:uppercase;color:var(--mar);animation:fd 2.6s ease-in-out infinite;z-index:2;transition:opacity .6s}
+.rel .hint{opacity:0;animation:none}
+@keyframes fd{50%{opacity:.3}}
+.pt{position:absolute;left:50%;top:64%;width:4px;height:4px;border-radius:50%;background:var(--ch);box-shadow:0 0 7px var(--g);animation:bs 1.8s ease-out forwards;z-index:6;pointer-events:none}
+@keyframes bs{to{transform:translate(var(--dx),var(--dy));opacity:0}}
+.tw{position:absolute;width:3px;height:3px;border-radius:50%;background:var(--ch);box-shadow:0 0 6px var(--g);animation:twk 4s ease-in-out infinite;pointer-events:none;z-index:1}
+@keyframes twk{0%,100%{opacity:0;transform:translateY(0)}50%{opacity:.85;transform:translateY(-14px)}}
+/* hero */
+.hero{padding:4.5rem 1rem 3rem;overflow:hidden;max-width:none;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.sk{color:var(--mar);font-size:1.05rem}
+.gn{position:relative;width:92px;height:92px;margin:.6rem 0 .2rem;display:grid;place-items:center}
+.gn:before{content:"";position:absolute;inset:0;border-radius:50%;border:1px solid var(--g);box-shadow:0 0 0 5px var(--iv),0 0 0 6px var(--ch),0 0 26px rgba(216,185,106,.55)}
+.gn svg{width:70px;height:70px}
+.wi{display:flex;align-items:center;gap:.8rem;margin:1rem 0 .4rem;font:400 .7rem Cinzel;letter-spacing:.4em;text-transform:uppercase;color:var(--br)}
+.wi:before,.wi:after{content:"";width:34px;height:1px;background:var(--g)}
+.oval{position:relative;width:min(86vw,380px);aspect-ratio:.84;display:grid;place-items:center;margin:.4rem 0}
+.oval>svg.ov{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.oval .fv{position:absolute;width:52%;aspect-ratio:1;pointer-events:none}
+.oval .a{top:-9%;left:-15%}.oval .b{bottom:-9%;right:-15%;transform:rotate(180deg)}
+.names{position:relative;line-height:1}
+.names .sc{display:block;font-size:clamp(3rem,15vw,4.5rem);color:var(--mar)}
+.names .sh{display:block;font:600 .8rem Cinzel;letter-spacing:.5em;margin:.1rem 0 .3rem .5em;background:linear-gradient(90deg,#9c6f1f,#D8B96A,#9c6f1f);-webkit-background-clip:text;background-clip:text;color:transparent}
+.names .am{font:400 2rem 'Great Vibes';color:var(--g);display:block;margin:.4rem 0}
+.hd{font:600 .85rem Cinzel;letter-spacing:.32em;text-transform:uppercase;color:var(--mar)}
+.hd small{display:block;font:italic 400 1rem 'Cormorant Garamond';letter-spacing:.08em;text-transform:none;color:var(--g);margin-top:.15rem}
+.gt{position:absolute;width:3px;height:3px;border-radius:50%;background:var(--ch);box-shadow:0 0 6px var(--g);animation:twk 5s ease-in-out infinite}
+/* countdown */
+.cd{display:flex;margin:1.3rem auto .6rem;max-width:420px}
+.cd div{flex:1;padding:.2rem 0}.cd div+div{border-left:1px solid rgba(184,137,47,.55)}
+.cd b{display:block;font:500 clamp(2.1rem,10vw,3rem)/1.05 'Cormorant Garamond';color:var(--mar);font-variant-numeric:tabular-nums}
+.cd span{font:400 .58rem Cinzel;letter-spacing:.24em;text-transform:uppercase;color:var(--g)}
+.cp{font-style:italic;color:var(--br)}
+/* sheets */
+.sheet{position:relative;margin:1.8rem auto 0;padding:2.8rem 1.4rem 2.4rem;background:#FFFAEC var(--tx);border:1px solid var(--g);box-shadow:inset 0 0 0 6px #FFFAEC,inset 0 0 0 7px var(--ch),0 14px 28px -14px rgba(57,35,25,.45)}
+.co{position:absolute;width:36px;height:36px;color:var(--g)}.co.tl{top:11px;left:11px}.co.tr{top:11px;right:11px;transform:scaleX(-1)}.co.bl{bottom:11px;left:11px;transform:scaleY(-1)}.co.br{bottom:11px;right:11px;transform:scale(-1)}
+.sd{font:400 .75rem Cinzel;letter-spacing:.34em;text-transform:uppercase;color:var(--g)}.sw{font-style:italic;font-size:1.1rem}
+.sheet h3{font:600 clamp(1.5rem,7vw,2rem)/1.2 Cinzel;letter-spacing:.2em;text-transform:uppercase;color:var(--mar)}
+.sheet .tm{font-size:1.35rem;font-weight:500;margin-top:.5rem}.sheet .pl{font-style:italic;color:var(--g)}
+.sheet.dk{background:var(--mar) var(--dm);border-color:var(--ch);box-shadow:inset 0 0 0 6px #68131E,inset 0 0 0 7px var(--ch),0 14px 28px -14px rgba(57,35,25,.55);color:#F6E8C4}
+.dk h3,.dk .tm{color:var(--ch)}.dk .sd,.dk .co,.dk .pl{color:var(--ch)}.dk .cl{color:var(--ch);border-color:var(--ch)}
+.cl{margin-top:.9rem;min-height:44px;padding:0 .4rem;background:none;border:0;border-bottom:1px solid var(--g);color:var(--mar);font:italic 1rem 'Cormorant Garamond';cursor:pointer}
+.al{margin-top:1.4rem}
+.tmp{width:112px;height:84px;margin:0 auto .5rem;color:var(--g)}
+.venue h3{font-size:clamp(1.6rem,7vw,2.1rem)}.venue p.ad{font-size:1.2rem}
+/* couple */
+.pt0{position:relative;width:min(70vw,290px);margin:1.6rem auto 2rem}
+.arch{position:relative;aspect-ratio:3/4;border-radius:999px 999px 4px 4px;border:1px solid var(--g);padding:9px;box-shadow:0 0 0 6px var(--iv),0 0 0 7px var(--ch),0 22px 30px -16px rgba(57,35,25,.5);background:var(--pp)}
+.arch>div{position:relative;width:100%;height:100%;border-radius:999px 999px 2px 2px;overflow:hidden;background:linear-gradient(#f8ecd0,#ecd9aa);display:grid;place-items:center}
+.arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.arch .md{width:80%;opacity:.8}
+.pt0 .vn{width:70%}.pt0 .tl{top:-12%;left:-30%}.pt0 .br{bottom:-8%;right:-30%}
+.pr{display:grid;gap:.5rem;justify-items:center}
+.pr .sc{font-size:2.5rem;color:var(--mar);line-height:1.1}.pr p{font-size:1.05rem}.pr b{font-weight:600}.pr .am{font:400 2rem 'Great Vibes';color:var(--g)}
+/* album */
+.alb{display:grid;grid-template-columns:repeat(6,1fr);gap:22px 12px;margin-top:1.8rem;text-align:center}
+.pic{position:relative;border:1px solid var(--g);background:#FFFBF0;padding:7px 7px 26px;box-shadow:0 12px 20px -10px rgba(57,35,25,.55),inset 0 0 0 1px #FFFBF0;transform:rotate(var(--r,0deg));cursor:pointer;display:block;font:inherit;color:inherit}
+.pic .ph{position:relative;aspect-ratio:var(--a);overflow:hidden;background:linear-gradient(#f8ecd0,#ecd9aa);display:grid;place-items:center}
+.pic .ph svg{width:70%;opacity:.7}.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pic em{position:absolute;bottom:3px;left:0;right:0;font:400 .55rem Cinzel;letter-spacing:.3em;color:var(--g)}
+.pic:before{content:"";position:absolute;top:-8px;left:50%;width:46px;height:15px;margin-left:-23px;background:rgba(216,185,106,.55);transform:rotate(-3deg)}
+.p1{grid-column:1/-1;--a:4/3;--r:-1deg}.p2{grid-column:1/4;--a:3/4;--r:1.6deg;margin-top:-4px}.p3{grid-column:4/7;--a:3/4;--r:-1.2deg;margin-top:14px}.p4{grid-column:1/4;--a:3/4;--r:-1.5deg;margin-top:-6px}.p5{grid-column:4/7;--a:3/4;--r:1deg;margin-top:12px}
+#lb{position:fixed;inset:0;z-index:200;background:rgba(30,12,8,.95);display:none;place-items:center}
+#lb.on{display:grid}
+#lb .ph{position:relative;width:min(92vw,820px);height:76svh;border:1px solid var(--g);display:grid;place-items:center}
+#lb .ph svg{width:40%;opacity:.5}#lb img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+#lb button{position:absolute;width:48px;height:48px;border:1px solid var(--g);background:rgba(0,0,0,.4);color:var(--ch);font-size:1.7rem;border-radius:50%;cursor:pointer}
+#lb .x{top:max(14px,env(safe-area-inset-top));right:14px}#lb .p{left:6px;top:50%}#lb .n{right:6px;top:50%}
+/* footer */
+footer{position:relative;overflow:hidden;text-align:center;padding:5rem 1.5rem calc(3.5rem + env(safe-area-inset-bottom));background:linear-gradient(var(--iv),var(--pp)) ,var(--tx);border-top:1px solid var(--ch)}
+footer .gn{margin:0 auto}footer .sc{font-size:clamp(2.6rem,12vw,3.8rem);color:var(--mar);line-height:1.1;margin-top:.6rem}
+footer p.bl{max-width:400px;margin:1rem auto;font-style:italic}
+/* fx */
+#glow{position:fixed;left:0;top:0;width:360px;height:360px;margin:-180px 0 0 -180px;border-radius:50%;background:radial-gradient(rgba(224,176,80,.26),transparent 65%);pointer-events:none;z-index:60;display:none}
+@media (hover:hover) and (pointer:fine){#glow{display:block}}
+.rp{position:fixed;width:10px;height:10px;margin:-5px;border:1px solid var(--g);border-radius:50%;pointer-events:none;z-index:300;animation:rp .8s ease-out forwards}
+@keyframes rp{to{transform:scale(5);opacity:0}}
+#pth{position:fixed;inset:0;width:100%;height:100%;z-index:35;pointer-events:none}
+#plane{position:fixed;left:0;top:0;width:28px;height:28px;margin:-14px;z-index:36;pointer-events:none;will-change:transform}
+.pet{position:fixed;top:-20px;width:10px;height:13px;border-radius:80% 0 80% 0;opacity:.5;pointer-events:none;z-index:34;animation:fall linear infinite}
+@keyframes fall{to{transform:translate3d(var(--sx),108vh,0) rotate(480deg)}}
+.dt{position:absolute;width:3px;height:3px;border-radius:50%;background:var(--ch);box-shadow:0 0 6px var(--g);opacity:0;animation:dt 4.5s ease-out forwards;pointer-events:none}
+@keyframes dt{20%{opacity:.9}to{opacity:0;transform:translate(var(--x),-90px)}}
+#nv{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:45;display:flex;flex-direction:column}
+#nv button{width:34px;height:34px;background:none;border:0;cursor:pointer;display:grid;place-items:center}
+#nv i{width:6px;height:6px;border:1px solid var(--g);transform:rotate(45deg);background:var(--iv);transition:.4s}#nv .on i{background:var(--mar);border-color:var(--mar);transform:rotate(45deg) scale(1.4)}
+@media (min-width:720px){body{font-size:20px}.vn.d{display:block}.vn{width:300px}.hero{padding-top:5rem}.pr{grid-template-columns:1fr auto 1fr;align-items:start;gap:1rem}.alb{gap:26px 16px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important}.pet,#plane,#pth,.tw,.gt,#glow,.dt{display:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<path id="pt" d="M0 0C-7-6-6-15 0-18 6-15 7-6 0 0z"/>
+<path id="lf" d="M0 0C6-6 14-6 22 0 14 6 6 6 0 0zM3 0H19"/>
+<symbol id="fw" viewBox="-20 -20 40 40"><g fill="#FAF4E6" fill-opacity=".5" stroke="currentColor" stroke-width=".9"><use href="#pt"/><use href="#pt" transform="rotate(72)"/><use href="#pt" transform="rotate(144)"/><use href="#pt" transform="rotate(216)"/><use href="#pt" transform="rotate(288)"/></g><g fill="none" stroke="currentColor" stroke-width=".6"><path d="M0 0C-3-3-3-8 0-10 3-8 3-3 0 0z" transform="rotate(36)"/><path d="M0 0C-3-3-3-8 0-10 3-8 3-3 0 0z" transform="rotate(108)"/><path d="M0 0C-3-3-3-8 0-10 3-8 3-3 0 0z" transform="rotate(180)"/><path d="M0 0C-3-3-3-8 0-10 3-8 3-3 0 0z" transform="rotate(252)"/><path d="M0 0C-3-3-3-8 0-10 3-8 3-3 0 0z" transform="rotate(324)"/></g><circle r="2.4" fill="#68131E"/><circle r="4" fill="none" stroke="#68131E" stroke-width=".5" stroke-dasharray=".6 1.2"/></symbol>
+<symbol id="vn" viewBox="0 0 200 200"><g fill="#D8B96A" fill-opacity=".3" stroke="#B8892F" stroke-width="1" stroke-linecap="round"><path fill="none" d="M0 8C70 8 120 40 138 120M8 0C8 70 40 120 120 138M0 44C34 44 62 56 78 84M44 0C44 34 56 62 84 78"/><use href="#lf" transform="translate(30 12) rotate(14)"/><use href="#lf" transform="translate(82 22) rotate(38)"/><use href="#lf" transform="translate(112 56) rotate(64)"/><use href="#lf" transform="translate(124 96) rotate(82)"/><use href="#lf" transform="translate(12 30) rotate(76)"/><use href="#lf" transform="translate(22 82) rotate(52)"/><use href="#lf" transform="translate(56 112) rotate(26)"/><use href="#lf" transform="translate(96 124) rotate(8)"/><use href="#lf" transform="translate(56 40) rotate(-26)"/><use href="#lf" transform="translate(40 56) rotate(116)"/><use href="#fw" x="40" y="4" width="36" height="36" color="#B8892F"/><use href="#fw" x="4" y="40" width="36" height="36" color="#B8892F"/><use href="#fw" x="92" y="70" width="30" height="30" color="#B8892F"/><use href="#fw" x="70" y="92" width="30" height="30" color="#B8892F"/><use href="#fw" x="108" y="118" width="22" height="22" color="#B8892F"/><circle cx="142" cy="132" r="2" fill="#68131E"/><circle cx="130" cy="150" r="1.6" fill="#B8892F"/><circle cx="150" cy="104" r="1.6" fill="#B8892F"/></g></symbol>
+<symbol id="dv" viewBox="0 0 240 24"><g fill="none" stroke="#B8892F" stroke-width=".8"><path d="M8 12H98M142 12H232"/><path d="M120 3C112 9 112 16 120 21 128 16 128 9 120 3zM120 21C108 20 102 14 104 8 110 10 116 14 120 21zM120 21C132 20 138 14 136 8 130 10 124 14 120 21z"/></g><g fill="#68131E"><path d="M0 12l4-3 4 3-4 3z"/><path d="M232 12l4-3 4 3-4 3z"/></g><g fill="#B8892F"><circle cx="102" cy="12" r="1.6"/><circle cx="138" cy="12" r="1.6"/></g></symbol>
+<symbol id="gn" viewBox="0 0 100 100"><g fill="none" stroke="#B8892F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"><path fill="#68131E" fill-opacity=".9" d="M39 27L42 12L50 20L58 12L61 27z"/><path d="M36 32C14 18 6 46 28 60C32 52 35 42 36 32zM64 32C86 18 94 46 72 60C68 52 65 42 64 32z"/><ellipse cx="50" cy="40" rx="15" ry="16"/><path d="M50 46C49 62 38 64 42 76C45 82 53 79 50 73"/><path d="M60 52c4 4 3 9 0 11"/><path d="M35 68C26 88 74 88 65 68C60 62 40 62 35 68z"/><path d="M28 90H72M35 95H65"/></g><g fill="#68131E"><circle cx="44" cy="38" r="1.6"/><circle cx="56" cy="38" r="1.6"/><path d="M50 27v6" stroke="#68131E" stroke-width="1.6"/></g></symbol>
+<symbol id="tm" viewBox="0 0 120 90"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"><path d="M8 84H112M14 84V76H106V84M30 76V48H90V76M52 76V62Q60 52 68 62V76M33 48L60 12L87 48M40 38H80M46 30H74M52 22H68M60 12V4M56 4H64M16 76V60L24 46L32 60V76M88 76V60L96 46L104 60V76M24 46V40M96 46V40"/></g><circle cx="60" cy="40" r="3" fill="#68131E"/></symbol>
+<symbol id="co" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M2 38V9Q2 2 9 2H38"/><path d="M7 38V13Q7 7 13 7H38" opacity=".6"/><path d="M14 14Q22 14 22 22T14 30"/></g><circle cx="14" cy="14" r="2" fill="currentColor"/></symbol>
+<symbol id="md" viewBox="-50 -50 100 100"><g fill="none" stroke="#B8892F" stroke-width=".5"><circle r="46"/><circle r="40" stroke-dasharray="1 2.4"/><circle r="9"/><g id="pp"><path d="M0-10C-6-19-5-30 0-36 5-30 6-19 0-10z"/></g><use href="#pp" transform="rotate(45)"/><use href="#pp" transform="rotate(90)"/><use href="#pp" transform="rotate(135)"/><use href="#pp" transform="rotate(180)"/><use href="#pp" transform="rotate(225)"/><use href="#pp" transform="rotate(270)"/><use href="#pp" transform="rotate(315)"/></g></symbol>
+</defs></svg>
+
+<div id="envl" role="dialog" aria-label="Wedding invitation envelope">
+ <div class="env" id="env">
+  <div class="eb"></div>
+  <div class="card"><svg class="vn tl"><use href="#vn"/></svg><svg class="vn br"><use href="#vn"/></svg><span class="dv" style="color:var(--mar);font-size:.9rem">॥ श्री गणेशाय नमः ॥</span><svg class="gm"><use href="#gn"/></svg><small>Wedding Invitation</small><b>Preethi</b><b style="font-size:1.4rem;color:var(--g)">&amp;</b><b>Bittu</b><small>21 · 11 · 2026</small></div>
+  <div class="ef"><svg class="fd" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100L50 64M100 100L50 64M0 36L50 64L100 36" fill="none" stroke="#D8B96A" stroke-opacity=".4" stroke-width=".4"/></svg><div class="nm"><b>Preethi Sharma</b><i>&amp;</i><b>Bittu Sharma</b></div></div>
+  <div class="flap"><div class="fa"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0L50 64L100 0" fill="none" stroke="#D8B96A" stroke-width=".7"/><path d="M6 0L50 56L94 0" fill="none" stroke="#D8B96A" stroke-opacity=".4" stroke-width=".3"/></svg><div class="tp dv">॥ श्री गणेशाय नमः ॥<svg><use href="#gn"/></svg></div></div><div class="fb"></div></div>
+  <button class="seal" id="seal" aria-label="Open the invitation">P&amp;B</button>
+ </div>
+ <p class="hint">Tap to Open</p>
+</div>
+
+<main inert>
+<section class="hero" id="s0">
+ <svg class="vn tl"><use href="#vn"/></svg><svg class="vn br"><use href="#vn"/></svg><svg class="vn tr d"><use href="#vn"/></svg><svg class="vn bl d"><use href="#vn"/></svg>
+ <p class="dv sk rv">॥ श्री गणेशाय नमः ॥</p>
+ <div class="gn rv" style="--d:.1s"><svg><use href="#gn"/></svg></div>
+ <p class="wi rv" style="--d:.2s">Wedding Invitation</p>
+ <div class="oval rv" style="--d:.3s">
+  <svg class="ov" viewBox="0 0 300 357" aria-hidden="true"><g fill="none" stroke="#B8892F"><ellipse cx="150" cy="178" rx="146" ry="173" stroke-width="1.3"/><ellipse cx="150" cy="178" rx="138" ry="165" stroke-width=".6"/><ellipse cx="150" cy="178" rx="130" ry="157" stroke-width="1" stroke-dasharray="1 5" stroke-linecap="round"/></g><g fill="#68131E"><path d="M150 0l5 6-5 6-5-6z"/><path d="M150 345l5 6-5 6-5-6z"/><path d="M0 178l5-5 5 5-5 5z"/><path d="M290 178l5-5 5 5-5 5z"/></g></svg>
+  <div class="names"><span class="sc">Preethi</span><span class="sh">Sharma</span><span class="am">&amp;</span><span class="sc">Bittu</span><span class="sh">Sharma</span></div>
+  <svg class="fv a"><use href="#vn"/></svg><svg class="fv b"><use href="#vn"/></svg>
+ </div>
+ <svg class="dvd rv"><use href="#dv"/></svg>
+ <p class="cz rv" style="font-size:.78rem;color:var(--mar)">Saturday · 21 November 2026</p>
+ <i class="gt" style="left:14%;top:30%"></i><i class="gt" style="left:84%;top:22%;animation-delay:1.4s"></i><i class="gt" style="left:70%;top:72%;animation-delay:2.6s"></i><i class="gt" style="left:22%;top:80%;animation-delay:.8s"></i>
+</section>
+
+<section id="s1" style="padding-top:2rem">
+ <svg class="dvd rv"><use href="#dv"/></svg>
+ <p class="cp rv">The Muhurtham begins in</p>
+ <div class="cd rv" role="timer" aria-label="Countdown to the Muhurtham"><div><b id="d">00</b><span>Days</span></div><div><b id="h">00</b><span>Hours</span></div><div><b id="m">00</b><span>Minutes</span></div><div><b id="s">00</b><span>Seconds</span></div></div>
+ <p class="cp rv" id="cdn">21 November 2026 · 8:00 PM IST</p>
+</section>
+
+<section id="s2">
+ <div class="hd rv"><span class="dv" style="font-size:1.1rem;letter-spacing:.05em;text-transform:none">॥ शुभ विवाह ॥</span><br>The Celebrations<small>Your presence will grace each occasion</small></div>
+ <article class="sheet rv"><p class="sd">20 November 2026</p><p class="sw">Friday</p><svg class="dvd"><use href="#dv"/></svg><h3>Tilak</h3><p class="tm">6:00 PM – 8:00 PM</p><p class="pl">At home</p><button class="cl" data-e="0">Add to calendar</button></article>
+ <article class="sheet rv"><p class="sd">20 November 2026</p><p class="sw">Friday</p><svg class="dvd"><use href="#dv"/></svg><h3>Haldi &amp; Mehndi</h3><p class="tm">8:00 PM – 10:00 PM</p><button class="cl" data-e="1">Add to calendar</button></article>
+ <article class="sheet dk rv"><p class="sd">21 November 2026</p><p class="sw">Saturday</p><svg class="dvd"><use href="#dv"/></svg><h3>Muhurtham</h3><p class="tm">8:00 PM – 12:00 AM</p><button class="cl" data-e="2">Add to calendar</button></article>
+ <div class="al rv"><button class="cl" data-e="all">Add all three to your calendar</button></div>
+</section>
+
+<section id="s3">
+ <div class="hd rv">The Venue</div>
+ <article class="sheet venue rv"><svg class="tmp"><use href="#tm"/></svg><p class="dv" style="color:var(--g)">माताजी मंदिर</p><h3>Mataji Temple</h3><svg class="dvd"><use href="#dv"/></svg><p class="ad">Batteshwara Layout, Bidarahalli<br>Bangalore – 560049</p><p style="margin-top:1.4rem"><a class="btn" id="dir" target="_blank" rel="noopener">Get Directions</a></p></article>
+</section>
+
+<section id="s4">
+ <div class="hd rv">The Couple<small>With the blessings of our families</small></div>
+ <div class="pt0 rv"><div class="arch"><div><svg class="md"><use href="#md"/></svg><img src="photo1.jpg" alt="Preethi and Bittu" loading="lazy" onerror="this.remove()"></div></div><svg class="vn tl"><use href="#vn"/></svg><svg class="vn br"><use href="#vn"/></svg></div>
+ <div class="pr rv"><div><p class="sc">Preethi Sharma</p><p>Daughter of<br><b>Shri Upendra Sharma &amp;<br>Smt. Sangeetha Devi</b></p></div><span class="am">&amp;</span><div><p class="sc">Bittu Sharma</p><p>Son of<br><b>Shri Mahendra Sharma &amp;<br>Smt. Malthi Devi</b></p></div></div>
+ <p class="cp rv" style="margin-top:1.6rem">With best compliments from<br><b style="font-weight:600;color:var(--mar)">Raju Sharma, Roshan Sharma &amp; Princy Sharma</b></p>
+</section>
+
+<section id="s5">
+ <div class="hd rv">The Album<small>Moments to keep</small></div>
+ <div class="alb rv" id="alb"></div>
+</section>
+
+<footer>
+ <svg class="vn tl"><use href="#vn"/></svg><svg class="vn br"><use href="#vn"/></svg>
+ <div class="gn rv"><svg><use href="#gn"/></svg></div>
+ <p class="dv rv" style="color:var(--mar);margin-top:.8rem">॥ शुभ विवाह ॥</p>
+ <svg class="dvd rv"><use href="#dv"/></svg>
+ <p class="sc rv">Preethi &amp; Bittu</p>
+ <p class="cz rv" style="font-size:.75rem;color:var(--g);margin-top:.4rem">21 · 11 · 2026</p>
+ <p class="bl rv">We request the pleasure of your company, with family and friends, to grace this auspicious occasion and bless the couple.</p>
+ <i class="gt" style="left:20%;top:30%"></i><i class="gt" style="left:80%;top:60%;animation-delay:1.6s"></i>
+</footer>
+</main>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer"><button class="x" aria-label="Close">×</button><button class="p" aria-label="Previous">‹</button><div class="ph" id="lbp"></div><button class="n" aria-label="Next">›</button></div>
+<div id="glow"></div>
+<svg id="pth" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path id="pp0" d="M-4 14C26 2 62 8 84 24S104 48 70 54 6 60 22 72 94 80 80 92 44 100 52 106" fill="none" stroke="#B8892F" stroke-opacity=".25" stroke-width=".22" stroke-dasharray=".5 1.1" stroke-linecap="round"/><path id="trl" d="M-4 14C26 2 62 8 84 24S104 48 70 54 6 60 22 72 94 80 80 92 44 100 52 106" fill="none" stroke="#B8892F" stroke-opacity=".5" stroke-width=".18"/></svg>
+<svg id="plane" viewBox="0 0 28 28" aria-hidden="true"><path d="M2 14L26 3 19 25 13 17z" fill="#FAF4E6" stroke="#68131E" stroke-width="1.1" stroke-linejoin="round"/><path d="M13 17L26 3M13 17l1 7 3-5" fill="none" stroke="#B8892F" stroke-width="1"/></svg>
+
+<script>
+(function(){
+var MAPS_URL=""; /* paste the exact Google Maps link here */
+var RM=matchMedia('(prefers-reduced-motion:reduce)').matches,$=function(i){return document.getElementById(i)},B=document.body,opened=false,envl=$('envl'),env=$('env');
+$('dir').href=MAPS_URL||'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent('Mataji Temple, Batteshwara Layout, Bidarahalli, Bangalore 560049');
+['tl','tr','bl','br'].forEach(function(c){document.querySelectorAll('.sheet').forEach(function(s){s.insertAdjacentHTML('beforeend','<svg class="co '+c+'"><use href="#co"/></svg>')})});
+function dust(p,n){for(var i=0;i<n;i++)(function(){var s=document.createElement('i');s.className='dt';s.style.left=Math.random()*100+'%';s.style.top=45+Math.random()*50+'%';s.style.setProperty('--x',(Math.random()*70-35)+'px');s.style.animationDelay=Math.random()*1.2+'s';p.appendChild(s);setTimeout(function(){s.remove()},6500)})()}
+if(!RM)for(var i=0;i<16;i++){var t=document.createElement('i');t.className='tw';t.style.left=Math.random()*100+'%';t.style.top=Math.random()*100+'%';t.style.animationDelay=Math.random()*4+'s';envl.appendChild(t)}
+/* opening sequence */
+function T(f,ms){setTimeout(f,RM?0:ms)}
+function open(){
+ if(opened)return;opened=true;
+ envl.classList.add('gl');
+ T(function(){envl.classList.add('rel');if(!RM)for(var i=0;i<30;i++){var p=document.createElement('i'),a=Math.random()*6.28,r=50+Math.random()*150;p.className='pt';p.style.setProperty('--dx',Math.cos(a)*r+'px');p.style.setProperty('--dy',Math.sin(a)*r-30+'px');p.style.animationDelay=Math.random()*.3+'s';env.appendChild(p)}},800);
+ T(function(){envl.classList.add('o1')},1500);
+ T(function(){envl.classList.add('o1b')},2200);
+ T(function(){envl.classList.add('o2')},2500);
+ T(function(){envl.classList.add('o3');envl.classList.add('out');B.classList.add('opened');document.querySelector('main').removeAttribute('inert');petals();dust($('s0'),12)},4800);
+ T(function(){envl.remove();reveal()},RM?0:6200);
+ if(RM){envl.remove();B.classList.add('opened');document.querySelector('main').removeAttribute('inert');reveal()}
+}
+env.addEventListener('click',open);
+addEventListener('keydown',function(e){if(!opened&&(e.key==='Enter'||e.key===' ')){e.preventDefault();open()}});
+$('seal').focus({preventScroll:true});
+/* reveal + nav */
+function reveal(){
+ var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');if(x.target.classList.contains('hd')&&!RM)dust(x.target.parentNode,7);io.unobserve(x.target)}})},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+ document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+ var nv=document.createElement('nav');nv.id='nv';nv.setAttribute('aria-label','Sections');
+ ['Invitation','Countdown','Celebrations','Venue','Couple','Album'].forEach(function(n,i){var b=document.createElement('button');b.setAttribute('aria-label',n);b.innerHTML='<i></i>';b.onclick=function(){$('s'+i).scrollIntoView({behavior:RM?'auto':'smooth'})};nv.appendChild(b)});
+ document.body.appendChild(nv);
+ var bs=nv.children,so=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){for(var k=0;k<bs.length;k++)bs[k].classList.toggle('on',('s'+k)===x.target.id)}})},{threshold:.4});
+ for(var k=0;k<6;k++)so.observe($('s'+k));
+}
+/* countdown (IST) */
+var TG=Date.parse('2026-11-21T20:00:00+05:30');
+function pad(n){return n<10?'0'+n:''+n}
+function tick(){var d=Math.max(0,TG-Date.now()),s=Math.floor(d/1000);$('d').textContent=pad(Math.floor(s/86400));$('h').textContent=pad(Math.floor(s%86400/3600));$('m').textContent=pad(Math.floor(s%3600/60));$('s').textContent=pad(s%60);if(!d)$('cdn').textContent='The celebration has begun'}
+tick();setInterval(tick,1000);
+/* calendar: IST converted to UTC */
+var EV=[['Tilak','20261120T123000Z','20261120T143000Z','At home'],['Haldi & Mehndi','20261120T143000Z','20261120T163000Z',''],['Muhurtham','20261121T143000Z','20261121T183000Z','Mataji Temple\\, Batteshwara Layout\\, Bidarahalli\\, Bangalore - 560049']];
+function ics(l){var o=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Preethi and Bittu//Wedding//EN','CALSCALE:GREGORIAN'];
+ l.forEach(function(e,i){o.push('BEGIN:VEVENT','UID:pb'+i+e[1]+'@wedding','DTSTAMP:20260101T000000Z','DTSTART:'+e[1],'DTEND:'+e[2],'SUMMARY:'+e[0]+' - Preethi & Bittu Wedding','LOCATION:'+e[3],'END:VEVENT')});o.push('END:VCALENDAR');
+ var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([o.join('\r\n')],{type:'text/calendar'}));a.download=l.length>1?'preethi-bittu-wedding.ics':l[0][0].split(' ')[0].toLowerCase()+'.ics';document.body.appendChild(a);a.click();a.remove()}
+document.querySelectorAll('[data-e]').forEach(function(b){b.onclick=function(){var v=b.dataset.e;ics(v==='all'?EV:[EV[+v]])}});
+/* album + lightbox */
+var N=5,alb=$('alb'),ix=0,lb=$('lb'),lbp=$('lbp'),RN=['I','II','III','IV','V'];
+for(var i=0;i<N;i++){var b=document.createElement('button');b.className='pic p'+(i+1);b.setAttribute('aria-label','Open photograph '+(i+1));b.innerHTML='<div class="ph"><svg><use href="#md"/></svg><img src="photo'+(i+1)+'.jpg" alt="Wedding photograph '+(i+1)+'" loading="lazy" onerror="this.remove()"></div><em>✦ '+RN[i]+' ✦</em>';(function(k){b.onclick=function(){show(k);lb.classList.add('on');B.style.overflow='hidden'}})(i);alb.appendChild(b)}
+function show(i){ix=(i+N)%N;lbp.innerHTML='<svg><use href="#md"/></svg><img src="photo'+(ix+1)+'.jpg" alt="Wedding photograph '+(ix+1)+'" onerror="this.remove()">'}
+function cl(){lb.classList.remove('on');B.style.overflow=''}
+lb.querySelector('.x').onclick=cl;lb.querySelector('.p').onclick=function(){show(ix-1)};lb.querySelector('.n').onclick=function(){show(ix+1)};
+lb.onclick=function(e){if(e.target===lb)cl()};
+addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')cl();if(e.key==='ArrowLeft')show(ix-1);if(e.key==='ArrowRight')show(ix+1)});
+var sx=0;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',function(e){var d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)show(d<0?ix+1:ix-1)},{passive:true});
+/* cursor glow + touch ripple */
+var gw=$('glow');addEventListener('pointermove',function(e){if(e.pointerType==='mouse')gw.style.transform='translate('+e.clientX+'px,'+e.clientY+'px)'},{passive:true});
+addEventListener('pointerdown',function(e){if(RM||!opened)return;var r=document.createElement('i');r.className='rp';r.style.left=e.clientX+'px';r.style.top=e.clientY+'px';B.appendChild(r);setTimeout(function(){r.remove()},850)},{passive:true});
+/* petals: few, slow, muted */
+function petals(){if(RM)return;var C=['#E3B9A0','#D9A58A','#E8C9A8','#CDA189','#D8B96A'];for(var i=0;i<6;i++){var p=document.createElement('i');p.className='pet';p.style.left=Math.random()*100+'vw';p.style.background=C[i%5];p.style.setProperty('--sx',(Math.random()*140-70)+'px');p.style.animationDuration=22+Math.random()*14+'s';p.style.animationDelay=-Math.random()*22+'s';B.appendChild(p)}}
+/* paper plane along a curved ornamental path */
+var pp=$('pp0'),trl=$('trl'),pl=$('plane'),L=pp.getTotalLength(),tk=false;trl.style.strokeDasharray=L;
+function fly(){tk=false;var m=document.documentElement.scrollHeight-innerHeight;if(m<=0)return;var p=Math.min(1,Math.max(0,scrollY/m)),a=pp.getPointAtLength(p*L),c=pp.getPointAtLength(Math.min(L,p*L+2)),w=innerWidth,h=innerHeight;
+ pl.style.transform='translate('+a.x*w/100+'px,'+a.y*h/100+'px) rotate('+Math.atan2((c.y-a.y)*h,(c.x-a.x)*w)*57.3+'deg)';trl.style.strokeDashoffset=L*(1-p)}
+addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(fly)}},{passive:true});addEventListener('resize',fly);fly();
+})();
+</script>
+</body>
+</html>
